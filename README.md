@@ -3,15 +3,11 @@ Plataforma de controle de projetos de pesquisa destinado a cadeeira de processo 
 
 ## ✒️ Autores
 * **Nerval de Jesus Santos Junior** - *Documentação - Dev - Engenheiro* - [PERFIL](https://github.com/nervaljunior)
-* 
-* **Leandro Lisboa Matos** - *Documentação - Dev - Engenheiro* - [PERFIL](https://github.com/nervaljunior)
-* 
-* **Leonardo Victor dos Santos Sa Menez** - *Documentação - Dev - Engenheiro* - [PERFIL](https://github.com/nervaljunior)
-* 
-* **Luís Guilherme Freitas de Almeida Silva** - *Documentação - Dev - Engenheiro* - [PERFIL](https://github.com/nervaljunior)
-* 
-* **Nerval** - *Documentação - Dev - Engenheiro* - [PERFIL](https://github.com/nervaljunior)
-* 
+* **Leandro Lisboa Matos** - *Documentação - Dev - Engenheiro* - [PERFIL]()
+* **Leonardo Victor dos Santos Sa Menez** - *Documentação - Dev - Engenheiro* - [PERFIL]()
+* **Luís Guilherme Freitas de Almeida Silva** - *Documentação - Dev - Engenheiro* - [PERFIL]()
+
+
 
 
 
