@@ -44,11 +44,11 @@ Este projeto consiste em uma plataforma para o gerenciamento de projetos de pesq
 
 ## ⚙️ Executando os testes
 
-[Explicar como executar os testes do projeto]
+
 
 ## 📦 Implantação
 
-[Detalhes sobre como implantar o projeto em um ambiente de produção]
+
 
 ## 🛠️ Construído com
 
@@ -58,7 +58,7 @@ Este projeto consiste em uma plataforma para o gerenciamento de projetos de pesq
 
 ## 📌 Versão
 
-# [Incluir informações sobre a versão do projeto]
+
 
 ## Estrutura do Projeto
 
