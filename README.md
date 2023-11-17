@@ -15,15 +15,17 @@ Este projeto consiste em uma plataforma para o gerenciamento de projetos de pesq
 
 ## 🚀 Começando
 
-[Instruções sobre como começar com o projeto]
-
 ### 📋 Pré-requisitos
 
-[Listar os pré-requisitos necessários para rodar o projeto]
+- Servidor PHP
+- Banco de dados PHPMyAdmin
+- StarUML para visualização do UML
 
 ### 🔧 Instalação
 
-[Instruções detalhadas sobre a instalação do projeto]
+1. Clone o repositório.
+2. Configure o servidor PHP.
+3. Importe o banco de dados utilizando o PHPMyAdmin.
 
 ## ⚙️ Executando os testes
 
@@ -35,7 +37,9 @@ Este projeto consiste em uma plataforma para o gerenciamento de projetos de pesq
 
 ## 🛠️ Construído com
 
-Ferramentas utilizadas para o desenvolvimento do projeto.
+- PHP
+- Banco de Dados PHPMyAdmin
+- StarUML para modelagem UML
 
 ## 📌 Versão
 
@@ -47,7 +51,9 @@ O projeto segue a arquitetura MVC (Model-View-Controller) para uma organização
 
 ## Requisitos e Ferramentas
 
-[Listar os requisitos e ferramentas necessários para o projeto]
+- PHP
+- PHPMyAdmin
+- StarUML
 
 ## Funcionalidades
 
