@@ -22,7 +22,7 @@ Este projeto consiste em uma plataforma para o gerenciamento de projetos de pesq
 #### Caso de Uso
 ![image](https://github.com/nervaljunior/Tm_APP/assets/108685222/e5595794-6143-4e0a-9d93-1520077fc02d)
 
-#### seguencia
+#### Sequência
 ![image](https://github.com/nervaljunior/Tm_APP/assets/108685222/71fb01be-f888-475e-b75f-3e9519760788)
 
 ![image](https://github.com/nervaljunior/Tm_APP/assets/108685222/0f9872d0-f640-4062-9065-d5ea9fbfa8ec)
