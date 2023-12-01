@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html class="notranslate" translate="no">
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="manifest" href="manifest.json?appver=740">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="shortcut icon" href="app/images/favicon.png">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+    
+</head>
+
+<body class="builder-template-layout theme-red {builder_top_menu}" id="builder-layout">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-indigo">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p id="page-loader-message">Carregando...</p>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="search-bar">
+        <div class="search-icon">
+            <i class="material-icons">search</i>
+        </div>
+
+        <div id="envelope_search">
+        </div>
+        <div class="close-search">
+            <i class="material-icons">close</i>
+        </div>
+    </div>
+
+    <nav class="nav navbar navbar-expand-lg" style="z-index:999">
+        <a href="javascript:void(0);" class="bars"></a>
+        <a class="navbar-brand" href="index.php"></a>
+        <i style="cursor:pointer" class="fas fa-columns white" onclick="$('body').toggleClass('ls-closed');"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-ellipsis-v"></i>
+        </button>
+        <!--[IF-TOP-MENU]-->
+        <li class="builder-menu-arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-left fa-fw"></i></a></li>
+        <div class="builder-menu navbar-collapse collapse" id="navbartoggle">
+            {TOP-MENU-BUILDER}
+        </div>
+        <li class="builder-menu-arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-right fa-fw"></i></a></li>
+        <!--[/IF-TOP-MENU]-->
+        <div class="collapse navbar-collapse" id="navbartoggle">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li style="height: 40px;padding-top: 10px;" >
+                    <a href="javascript:void(0);" class="js-search" data-close="true"><i class="material-icons">search</i></a>
+                </li>
+                
+                {DROPDOWN_MENU}
+
+                <!--{BUILDER-MENU}-->
+
+                 <li class="dropdown messages-menu" id="envelope_messages">
+                 </li>
+                 
+                 <li class="dropdown notifications-menu" id="envelope_notifications">
+                 </li>
+
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="material-icons">person</i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class='header'>{username}</li>
+                        <li class='body'>
+                            <ul class='menu' style="list-style:none">
+                                <li><a class='waves-effect waves-block' href="index.php?class=SystemProfileView"><i class="material-icons">person</i>_t{Profile}</a></li>
+                                <li><a class='waves-effect waves-block' href="index.php?class=SystemMessageList&method=filterInbox"><i class="material-icons">email</i>_t{Messages}</a></li>
+                                <li><a class='waves-effect waves-block' href="index.php?class=SystemNotificationList"><i class="material-icons">notifications</i>_t{Notifications}</a></li>
+                                <li><a class='waves-effect waves-block' href="index.php?class=LoginForm&method=reloadPermissions&static=1"><i class="material-icons">cached</i>_t{Reload}</a></li>
+                                <li><a class='waves-effect waves-block' generator="adianti" href="index.php?class=LoginForm&method=onLogout&static=1"><i class="material-icons">input</i>Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--[IF-LEFT-MENU]-->
+    <section>
+        <aside id="leftsidebar" class="sidebar">
+            <div class="user-info">
+                <div class="image">
+                    <img src="app/images/photos/{login}.jpg" onError="this.onerror=null;this.src='app/templates/{template}/images/user.png';" width="48" height="48" alt="User" />
+                </div>
+                <div class="info-container">
+                    <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{username}</div>
+                    <div class="email">{usermail}</div>
+                    <div class="btn-group user-helper-dropdown">
+                        <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
+                        <ul class="dropdown-menu pull-right">
+                            <li><a href="index.php?class=SystemProfileView"><i class="material-icons">person</i>_t{Profile}</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="index.php?class=SystemMessageList&method=filterInbox"><i class="material-icons">email</i>_t{Messages}</a></li>
+                            <li><a href="index.php?class=SystemNotificationList"><i class="material-icons">notifications</i>_t{Notifications}</a></li>
+                            <li role="seperator" class="divider"></li>
+                            <li><a href="index.php?class=LoginForm&method=reloadPermissions&static=1"><i class="material-icons">cached</i>_t{Reload}</a></li>
+                            <li><a generator="adianti" href="index.php?class=LoginForm&method=onLogout&static=1"><i class="material-icons">input</i>Logout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                {MENU}
+            </div>
+            <div class="legal">
+                <div class="copyright">
+                    {userunitid} - {userunitname}
+                    Versão 1.0
+                    <!--[IFADMIN]-->
+                    <a style="cursor:pointer; font-size: 70%; color: teal !important" href="#" onclick="BuilderEditorCss.initEditorCss(true)"> <i class="fas fa-hashtag" aria-hidden="true"></i> Editor de CSS </a> &nbsp;
+                    <span style="cursor:pointer; font-size: 70%; color: teal !important" onclick="Adianti.showDebugPanel()"> <i class="fa fa-window-maximize" aria-hidden="true"></i> Debug Console </span> &nbsp;
+                    <a style="cursor:pointer; font-size: 70%; color: teal !important" generator="adianti" href="index.php?class=SystemModulesCheckView"> <i class="fa fa-code" aria-hidden="true"></i> PHP Modules </a>
+                    <!--[/IFADMIN]-->
+                </div>
+            </div>
+        </aside>
+    </section>
+    <!--[/IF-LEFT-MENU]-->
+
+    <section class="content content-wrapper">
+        <div class="container-fluid">
+            <div id='adianti_content'>
+                <div class="adianti_tabs_container">
+                    <div id="adianti_tab_content"></div>
+                    <a onclick="__adianti_scroll_tab('left')" class="tab-arrow tab-arrow-left" href="#"><i class="fas fa-angle-double-left"></i></a>
+                    <a onclick="__adianti_scroll_tab('right')" class="tab-arrow tab-arrow-right" href="#"><i class="fas fa-angle-double-right"></i></a>
+                </div>
+                <div id="adianti_div_content"></div>
+            </div>
+        </div>
+        <div id="adianti_online_content"></div>
+        <div id="adianti_online_content2"></div>
+        
+        <div id="adianti_right_panel" class="right-panel"></div>
+    </section>
+    
+      <div id="adianti_debug_panel" class="debug-panel">
+          <i onclick="Adianti.hideDebugPanel()" class="fa fa-times" aria-hidden="true" title="_t{Close}"></i>
+          <span > Request URL </span>
+          <span > Request Data </span>
+          <div id="request_url_panel"> </div>
+          <div id="request_data_panel"> </div>
+      </div>
+      
+    <script>
+    BuilderTemplate.init({
+        top_menu: {top_menu_var},
+        top_menu_only: {top_menu_only},
+        language: '{lang}',
+        debug: '{debug}',
+        application_name: '{application}',
+        use_mdi_windows : {use_mdi_windows},
+        store_tabs : {store_tabs},
+        use_tabs : {use_tabs},
+        verify_messages_menu : {verify_messages_menu},
+        verify_notifications_menu : {verify_notifications_menu},
+        public_layout: false
+    });
+    </script>
+    
+</body>
+</html>

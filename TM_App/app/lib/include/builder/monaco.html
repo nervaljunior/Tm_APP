@@ -1,0 +1,26 @@
+<!--[main]-->
+<div style='height: {$height}'>
+    <div id='monaco-code-editor-container' style='height: 100%;'>
+        
+    </div>
+
+    <script>    
+        if(typeof monaco == 'undefined')
+        {
+            $.getScript('app/lib/include/builder/monaco/loader.js').done(function( script, textStatus ) {
+                require.config({ paths: { 'vs': 'app/lib/include/builder/monaco' }});
+                require(['vs/editor/editor.main'], function() {
+                    Builder.initMonacoEditor('{$value_selector}', '{$language}');
+                });        
+            });
+        }
+        else
+        {
+            setTimeout(function(){
+                Builder.initMonacoEditor('{$value_selector}', '{$language}');    
+            });
+        }
+    </script>
+
+</div>
+<!--[/main]--> 

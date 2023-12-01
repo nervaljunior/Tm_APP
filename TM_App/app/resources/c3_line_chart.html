@@ -1,0 +1,61 @@
+<!--[main]-->
+
+<div id='chart-box' style="margin: auto; float: none; width: {$width}{$widthType}">
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            <div class="panel-title" id='title'>{$title}</div>
+        </div>
+        <div class="panel-body no-padding">
+            <div id='chart-container' height='{$height}px'>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<script>
+
+var graphData = {$data|raw};
+
+renderBarChart(graphData);
+
+function renderBarChart(data){
+    c3.generate({
+        bindto: '#chart-container',
+        legend: {
+            show: {$showLegend}
+        },
+        size: {
+          height: {$height}
+        },
+        data: {
+            x : 'x',
+            columns: data,
+            labels: {
+                format: function (v, id, i, j) { 
+                    if(v == null)
+                        return null
+                    return '{$prefix}'+number_format(v, '{$precision}', '{$decimalSeparator}', '{$thousandSeparator}')+'{$sufix}';
+                }
+            }
+        },
+        axis: {
+            x: {
+                type: 'category'
+            },
+            y: {
+            tick: {
+                format: function(d){
+                        if(d == null)
+                            return null
+                        return '{$prefix}'+number_format(d, '{$precision}', '{$decimalSeparator}', '{$thousandSeparator}')+'{$sufix}';
+                    }
+                }
+            }
+        }
+    });
+}
+</script>
+    
+<!--[/main]-->

@@ -1,0 +1,190 @@
+:root
+{
+    --font-size: 15px;
+    --text-color: #8694B0;
+    --text-color-strong: #516283;
+    --text-color-light: #ADB8CC;
+    --template-border-color: #DFE4ED;
+    --main-color: #fd9203;
+    --font-family: 'Noto Sans', sans-serif;
+    --scrollbar-color: var(--template-border-color);
+    --header-height: 60px;
+    --header-border-bottom: var(--template-border-color);
+    --header-logo-border-right: var(--template-border-color);
+    --header-logo-border-bottom: var(--template-border-color);
+    --header-logo-background: #fff;
+    --header-track-border-right: var(--template-border-color);
+    --header-background-color:#fff;
+    --header-logo-font-size: 22px;
+    --header-box-display: none;
+    --header-text-color: #333;
+    --header-box-width:60px;
+    --header-box-background: transparent;
+    --header-box-shadow: none;
+
+    --button-height: 35px;
+    --button-border: var(--template-border-color);
+    --button-text-color: #516283;
+    --button-text-color-hover: var(--main-color);
+    --button-background: #fff;
+    --button-border-radius: 32px;
+    --button-padding: 13px;
+    --button-box-shadow: none;
+
+    --menu-box-shadow: none;
+    --menu-master-color-strong: #516283;
+    --menu-width: 280px;
+    --menu-border-right: var(--template-border-color);
+    --menu-background-color:#fff;
+    --menu-icon-font-size: var(--font-size);
+    --menu-background-check: var(--main-color);
+    --menu-check-color: #fff;
+    --menu-button-border-color: var(--button-border);
+
+    --submenu-border-right: var(--template-border-color);
+    --submenu-background-color:#fff;
+    --submenu-sub-text-color:#8694B0;
+    --submenu-text-color: var(--text-color-strong);
+    --submenu-text-hover: var(--main-color);
+    --submenu-background-check: var(--main-color);
+    --submenu-check-color: #fff;
+
+    --top-menu-border: var(--template-border-color);
+    --top-menu-background-color: var(--live-background-color);
+    --top-menu-background-check: var(--main-color);
+    --top-menu-check-color: #fff;
+    --top-menu-hover-color: var(--main-color);
+    --top-menu-color: #8694B0;
+
+    --top-submenu-background-color: var(--live-background-color);
+    --top-submenu-text-color: #8694B0;
+    --top-submenu-text-hover: var(--main-color);
+    --top-submenu-background-check: var(--main-color);
+    --top-submenu-check-color: #fff;
+
+    --live-background-color:#fff;
+
+    --login-background-color: var(--live-background-color);
+    --login-panel-header-background: var(--panel-header-background);
+    --login-panel-left-background-color: var(--main-color);
+    --login-panel-right-background-color: var(--live-background-color);
+    
+    --login-button-background: var(--button-background);
+    --login-button-text-color: var(--button-text-color);
+    
+    --login-panel-left-text-header-color: var(--text-color);
+    --login-panel-left-text-header-align: left;
+    --login-panel-left-text-header-font-size: 40px;
+    --login-panel-left-text-header-font-weight: 700;
+    
+    --login-panel-left-text-footer-color:  var(--text-color);
+    --login-panel-left-text-footer-align: left;
+    --login-panel-left-text-footer-font-size: 30px;
+    --login-panel-left-text-footer-font-weight: 700;
+    
+    --login-title-font-size: 40px;
+    --login-title-align: center;
+    --login-title-font-weight: 700;
+    --login-title-color: var(--text-color);
+
+    --login-header-font-size: 14px;
+    --login-header-align: left;
+    --login-header-color: var(--text-color);
+    --login-border-color: var(--template-border-color);
+
+    --login-panel-detail-display: flex;
+    --login-panel-detail-display-image: flex;
+    --login-panel-detail-display-details: flex;
+
+    --login-panel-detail-image-size: contain;
+    --login-panel-detail-image-position: center;
+    --login-panel-detail-direction: row;
+    --login-panel-max-width: 1250px;
+    --login-panel-border-radius: 10px;
+    --login-panel-box-shadow: 0px 0px 10px 4px #0000004d;
+    --login-form-box-shadow: none;
+    --login-link-color: var(--login-title-color);
+
+    --field-border-color: var(--template-border-color);
+    --field-border-top: 1px;
+    --field-border-bottom: 1px;
+    --field-border-right: 1px;
+    --field-border-left: 1px;
+    --field-height: var(--button-height);
+    --field-border-radius: 24px;
+    --field-placeholder-color: #ADB8CC;
+    --field-padding-horizontal: 8px;
+    --field-padding-vertical: 0px;
+    --field-padding: var(--field-padding-vertical) var(--field-padding-horizontal) var(--field-padding-vertical) var(--field-padding-horizontal);
+    --field-color: #516283;
+    --field-background: #fff;
+    --field-focus-border-color: #bcc2d1;
+
+    --content-border-color: #DFE4ED;
+    --content-border-radius: 10px;
+    --content-background: #f8f9fb;
+    --color-overlay: #0000004d;
+    --color-green: #2ecc71;
+    --color-red: #EF4648;
+    --color-blue: #047afd;
+    --color-orange: #F9BF3B;
+    --color-sea: #1BA39C;
+    --color-purple: #8E44AD;
+
+    --modal-background: #fff;
+    --modal-footer-background: #DFE4ED;
+    --modal-header-background: var(--main-color);
+    --modal-header-color: #fff;
+
+    --preloader-color: var(--main-color);
+    --live-area-width: 100%;
+    --login-background-opacity: 0.6;
+
+    --panel-background: #fff;
+    --panel-header-background: #eceff4;
+    --panel-footer-background: #fff;
+    --panel-header-color: var(--text-color-strong);
+    --panel-body-padding: 15px;
+    --panel-border-radius: 8px;
+    --panel-box-shadow: none;
+    --panel-border-color: var(--content-border-color);
+
+    --tr-hover-background: #eceff4;
+    --tr-hover-color:  var(--text-color);
+    --tr-even-background: #fff;
+    --tr-odd-background: #f8f9fb;
+    --table-body-color: var(--text-color);
+    --table-header-color: orange;
+
+    --menu-user-splash-background: var(--submenu-background-color);
+    --panel-header-font-size: calc(var(--font-size) + 2px);
+    --panel-header-font-weight: 600;
+    
+    --panel-header-padding-vertical: 20px;
+    --panel-header-padding-horizontal: 10px;
+    --panel-header-border-color: transparent;
+
+    --header-logo-text-color: var(--header-text-color);
+    --menu-background-button-circle: var(--button-background);
+    --menu-color-button-circle: var(--button-text-color);
+
+    --top-menu-background-button-circle:var(--button-background);
+    --top-menu-color-button-circle:var(--button-text-color);
+
+    --submenu-font-size: var(--font-size);
+    --submenu-padding-horizontal: 0px;
+    --submenu-item-padding-horizontal: 12px;
+    --submenu-item-padding-vertical: 12px;
+    --modules-button-radius: 100px;
+
+    --header-box-padding-horizontal: 0px;
+    --header-box-padding-vertical: 0px;
+    --header-logo-padding-horizontal: 0px;
+    --header-logo-padding-vertical: 0px;
+    --login-panel-left-header-image-position: center;
+
+    --login-text-center-align: center;
+    --login-text-center-size: 18px;
+    --login-text-center-weight: 600;
+    --login-text-center-color: var(--text-color);
+}
