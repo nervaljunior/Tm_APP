@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="manifest" href="manifest.json?appver=740">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+    
+</head>
+
+<body class="theme-red {builder_top_menu}">
+    <div class="page-loader-wrapper">
+        <div class="loader">
+            <div class="preloader">
+                <div class="spinner-layer pl-indigo">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <p id="page-loader-message">Carregando...</p>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <nav class="nav navbar navbar-expand-lg" style="z-index:999">
+        <a href="javascript:void(0);" class="bars"></a>
+        <a class="navbar-brand" href="index.php"></a>
+        <i style="cursor:pointer" class="fas fa-columns white" onclick="$('body').toggleClass('ls-closed');"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbartoggle" aria-controls="navbartoggle" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-ellipsis-v"></i>
+        </button>
+        <!--[IF-TOP-MENU]-->
+        <li class="builder-menu-arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-left fa-fw"></i></a></li>
+        <div class="builder-menu navbar-collapse collapse" id="navbartoggle">
+            {TOP-MENU-BUILDER}
+        </div>
+        <li class="builder-menu-arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-right fa-fw"></i></a></li>
+        <!--[/IF-TOP-MENU]-->
+        <div class="collapse navbar-collapse" id="navbartoggle">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                
+                <li><a title="Log in" generator="adianti" href="index.php?class=LoginForm" data-close="true"><i class="material-icons">person_pin</i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--[IF-LEFT-MENU]-->
+    <section>
+        <aside id="leftsidebar" class="sidebar">
+            <div class="user-info">
+                <div class="image">
+                    <br>
+                    <i class="fa fa-university white fa-2x" aria-hidden="true"></i>
+                    <span class="white"></span>
+                </div>
+            </div>
+            <div class="menu">
+                {MENU}
+            </div>
+            <div class="legal">
+                <div class="copyright">
+                    {userunitid} - {userunitname}
+                    Versão 1.0
+                </div>
+            </div>
+        </aside>
+    </section>
+    <!--[/IF-LEFT-MENU]-->
+
+    <section class="content content-wrapper">
+        <div class="container-fluid">
+            <div id="adianti_div_content">
+            </div>
+        </div>
+        <div id="adianti_online_content"></div>
+        <div id="adianti_online_content2"></div>
+        
+        <div id="adianti_right_panel" class="right-panel"></div>
+    </section>
+    
+    <script>
+    BuilderTemplate.init({
+        top_menu: {top_menu_var},
+        top_menu_only: {top_menu_only},
+        language: '{lang}',
+        debug: '{debug}',
+        application_name: '{application}',
+        use_mdi_windows: false,
+        store_tabs: false,
+        use_tabs: false,
+        verify_messages_menu : {verify_messages_menu},
+        verify_notifications_menu : {verify_notifications_menu},
+        public_layout: true
+    });
+    </script>
+    
+</body>
+</html>

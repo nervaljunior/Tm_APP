@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html id="iframe_content" class="notranslate" translate="no">
+<head>
+    <title> {title} </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="manifest.json?appver=740">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+    
+    <script src="lib/adianti/include/iframe.js?appver=1" type="text/javascript"></script>
+</head>
+
+<body style="background:white">
+    <div style="width:100%;">
+        <div class="adianti_iframe_navbar"></div>
+        <div id="adianti_div_content"></div>
+    </div>
+    <div id="adianti_online_content"></div>
+    <div id="adianti_online_content2"></div>
+    <div id="adianti_right_panel" class="right-panel"></div>
+    
+    <script language="JavaScript">    
+        __adianti_set_language('{lang}');
+    </script>
+    
+</body>
+</html>

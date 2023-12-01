@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+  <menuitem label="Login">
+    <icon>fas:shield-alt fa-fw</icon>
+    <menu>
+      <menuitem label="Login">
+        <icon>fa:sign-in-alt fa-fw</icon>
+        <action>LoginForm</action>
+      </menuitem>
+      <menuitem label="_t{Create account}">
+        <icon>fa:user-plus fa-fw</icon>
+        <action>SystemRegistrationForm</action>
+      </menuitem>
+      <menuitem label="_t{Reset password}">
+        <icon>fa:eraser fa-fw</icon>
+        <action>SystemRequestPasswordResetForm</action>
+      </menuitem>
+    </menu>
+  </menuitem>
+</menu>

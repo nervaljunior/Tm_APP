@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html translate="no">
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="shortcut icon" href="app/images/favicon.png">
+    <link rel="manifest" href="manifest.json?appver=740">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+    
+</head>
+<body class="builder-template-layout " id="builder-layout">
+	<nav class='container-header navbar'>
+        <div class='header-logo'>
+            <!--[IF-LEFT-MENU]-->
+            <div class="toggle-menu"><i class="fa fa-bars"></i></div>
+            <!--[/IF-LEFT-MENU]-->
+            <div class="toggle-top-menu"><i class="fa fa-ellipsis-v"></i></div>
+
+            <div class='header-box'></div>
+            <div class='company-logo'>
+                <div class='simulate-logo'>
+                    <div class='logo-name'></div>
+                </div>
+
+                <!--[IF-LEFT-MENU]-->
+                <div class="fixed-sidebar-mini-menu"><i class="fa fa-thumbtack"></i></div>
+                <!--[/IF-LEFT-MENU]-->
+            </div>
+        </div>
+        <div class='header-track'>
+
+            <!--[IF-TOP-MENU]-->
+            <div class="header-action builder-menu" id="navbar-builder-top-menu-collapse">
+                <div class="arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-left fa-fw"></i></a></div>
+                {TOP-MODULE-MENU-BUILDER}
+                <div class="arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-right fa-fw"></i></a></div>
+            </div>
+            <!--[/IF-TOP-MENU]-->
+
+            <div class='header-action navbar-custom-menu'>
+            </div>
+            
+            <div class='header-action builder-dropdown-menu'>
+                
+                {DROPDOWN_MENU}
+
+                <div class="button-circle" id="envelope_messages"></div>
+                <div class="button-circle" id="envelope_notifications"></div>
+                <div class='fast-drop builder-list-themes'>
+                    <div class='fast-drop-label'>
+                        <a href="#" class='button-circle'><i class="fas fa-fill-drip"></i></a>
+                    </div>
+                    <div class='fast-drop-open'>
+                        <a href='#' class='change-theme' theme='darti'><i class='fas fa-palette'></i> DARTI</a>
+                    </div>
+                </div>
+
+                <!--{BUILDER-MENU}-->
+            </div>
+
+            <div class='header-action no-border builder-profile-menu'>
+                <div class='fast-drop'>
+                    <div class='fast-drop-label'>
+                        <div class='header-profile-photo' style="background: url('app/images/photos/{login}.jpg'), url('app/images/photos/user.jpg')"></div>
+                        <div class='header-profile-name'>{username} <i class="fas fa-angle-down"></i></div>
+                    </div>
+                    <div class='fast-drop-open'>
+                        <a generator="adianti" href="index.php?class=SystemProfileView"><i class="fas fa-user"></i>_t{Profile}</a>
+                        <a generator="adianti" href="index.php?class=LoginForm&method=reloadPermissions&static=1"><i class="fas fa-sync"></i>_t{Reload}</a>
+                        <a generator="adianti" href="index.php?class=LoginForm&method=onLogout&static=1"><i class="fas fa-sign-out-alt"></i>_t{Exit}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class='container-main'>
+        <!--[IF-LEFT-MENU]-->
+        <div class='master-menu-content'>
+            <div class='container-menu'>
+                <div class="menu-elastic">
+                    <i class="fas fa-angle-down icon-down"></i>
+                    {MODULE_MENU}
+                </div>
+            </div>
+            <div class='container-submenu'>
+                <div class='splash-user-content'>
+                    <div class='splash-user-photo' style="background: url('app/images/photos/{login}.jpg'), url('app/images/photos/user.jpg')">
+                        <a generator="adianti" href="index.php?class=SystemProfileView" class='button-circle checked'><i class="fas fa-pen"></i></a>
+                    </div>
+                    <div class='splash-user-name'>{username}</div>
+                    <div class='splash-user-att'>{usermail}</div>
+                </div>
+                {MENU}
+                <div style="margin-top: auto;color: var(--text-color-light);padding: 15px;">
+                    Versão 1.0
+                    <strong>{userunitid} - {userunitname}</strong>
+                <!--[/IF-LEFT-MENU]-->
+                    <!--[IFADMIN-LEFT-MENU]-->
+                    <div>
+                        <a style="cursor:pointer; display: block; color: var(--submenu-text-color); width: 100%;" href="#" onclick="BuilderEditorCss.initEditorCss(true)"> <i class="fas fa-hashtag" aria-hidden="true"></i> Editor de CSS </a>
+                        <a style="cursor:pointer; display: block; color: var(--submenu-text-color); width: 100%;" generator="adianti" href="index.php?class=SystemModulesCheckView"> <i class="fa fa-code" aria-hidden="true"></i> PHP Modules </a>
+                        <span style="cursor:pointer; display: block; color: var(--submenu-text-color); width: 100%;" onclick="Adianti.showDebugPanel()"> <i class="fa fa-window-maximize" aria-hidden="true"></i> Debug Console </span>
+                    </div>
+                    <!--[/IFADMIN-LEFT-MENU]-->
+                <!--[IF-LEFT-MENU]-->
+                </div>
+            </div>
+        </div>
+        <!--[/IF-LEFT-MENU]-->
+        <div class="master-container">
+            <!--[IF-TOP-MENU]-->
+            <div class="builder-menu collapse " id="navbar-builder-top-submenu-collapse">
+                <div class="arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-left fa-fw"></i></a></div>
+                {TOP-MENU-BUILDER}
+                <div class="arrow-menus-scroll"><a href="#"><i class="fas fa-chevron-right fa-fw"></i></a></div>
+            </div>
+            <!--[/IF-TOP-MENU]-->
+
+            <div class='container-live' id="adianti_content">
+                <div class="adianti_tabs_container">
+                    <div id="adianti_tab_content"></div>
+                    <div class="adianti_tab_content_actions">
+                        <a onclick="__adianti_scroll_tab('left')" class="tab-arrow tab-arrow-left" href="#"><i class="fas fa-angle-double-left"></i></a>
+                        <a onclick="__adianti_scroll_tab('right')" class="tab-arrow tab-arrow-right" href="#"><i class="fas fa-angle-double-right"></i></a>
+                    </div>
+                </div>
+                <div id="adianti_div_content"></div>
+                <div id="adianti_online_content"></div>
+                <div id="adianti_online_content2"></div>
+                <div id="adianti_right_panel" class="right-panel"></div>
+            </div>
+        </div>
+    </div>
+
+    <!--[IFADMIN]-->
+    <footer>
+        <div id="adianti_debug_panel" class="debug-panel">
+            <i onclick="Adianti.hideDebugPanel()" class="fa fa-times" aria-hidden="true" title="_t{Close}"></i>
+            <span > Request URL </span>
+            <span > Request Data </span>
+            <div id="request_url_panel"> </div>
+            <div id="request_data_panel"> </div>
+        </div>
+    </footer>
+    <!--[/IFADMIN]-->
+
+    <script>
+        BuilderTemplate.init({
+            top_menu: {top_menu_var},
+            top_menu_only: {top_menu_only},
+            language: '{lang}',
+            debug: '{debug}',
+            application_name: '{application}',
+            use_mdi_windows : {use_mdi_windows},
+            store_tabs : {store_tabs},
+            use_tabs : {use_tabs},
+            verify_messages_menu : {verify_messages_menu},
+            verify_notifications_menu : {verify_notifications_menu},
+            public_layout: false,
+            theme: '{user_theme}'
+      });
+    </script>
+    
+</body>
+</html>

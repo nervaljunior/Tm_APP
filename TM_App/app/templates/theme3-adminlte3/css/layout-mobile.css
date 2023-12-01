@@ -1,0 +1,397 @@
+li#envelope_messages>div>a>i,
+li#envelope_notifications>div>a>i {
+    font-size: 24px !important;
+}
+
+.layout-mobile .main-header  {
+    height: 50px;
+    display: flex !important;
+}
+
+.layout-mobile .main-footer,
+.layout-mobile .content-wrapper,
+.layout-mobile .main-header {
+    margin-left: 0px !important;
+}
+
+.layout-navbar-fixed .wrapper .content-wrapper {
+    margin-top: 50px !important;
+}
+
+.layout-mobile .builder-mobile-title {
+    margin-left: 50px;
+    font-size: 25px;
+}
+
+@media  (max-width: 576px) {
+    .layout-mobile  #adianti_right_panel.right-panel {
+        width: calc( 100% - 50px) !important;
+    }
+}
+@media (max-width: 576px) {
+    #adianti_right_panel.right-panel {
+    width: 100% !important;
+    }
+}
+
+.card.panel[widget='bootstrapformbuilder'] > .panel-heading, #chart-box > .panel-heading{
+    
+    border-top: 2px solid ;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-top: 3px solid  !important;
+}
+
+@media (min-width: 767px) {
+    div.builder-menu .dropdown.show {
+        {$menuBtnColor}
+    } 
+}
+
+@media (max-width: 767px) {
+    
+    div.builder-menu .dropdown.show>a {
+        {$menuBtnColor}
+    }
+}
+
+.steps li.active .step-number, .steps li.active:before, .steps li.complete .step-number, .steps li.complete:before {
+    {$menuBtnColor}
+}
+
+#login-wrapper .card > .panel-heading {
+       
+    border-top: 2px solid ;
+}
+.card.panel[widget='bootstrapformbuilder'] .panel-title, #chart-box > .panel-heading{
+    font-weight: 400;
+}
+.ui-dialog .window_modal
+{
+    padding:0.2px;
+}
+.ui-dialog .window_modal .panel
+{
+    margin-bottom:0;
+    border-top:0;
+    border-radius:0;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;;
+    -moz-box-shadow: none !important;;
+    border: 0px !important;
+}
+.ui-dialog .window_modal .panel-body{
+  padding: 0px !important;
+  padding-top: 8px !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}
+
+.ui-dialog .window_modal div[widget="bootstrapformbuilder"] > .panel-heading{
+   display: none;
+}
+
+.formView-detail table{
+    margin-bottom: 0px;
+}
+.formView-detail .panel-body{
+    padding: 0px;
+}
+
+.panel-body .tformrow{
+    min-height: 35px;
+}
+.fb-field-container{
+    padding-left: 8px;
+    padding-right: 8px;
+    min-height: 35px;
+}
+.fb-field-container.control-label{
+    padding-top:4px;
+}
+
+.header-actions .btn label{
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.panel-title .ttd{
+    margin-top: 0px !important;
+}
+
+[type=button], [type=reset], [type=submit], button{
+    -webkit-appearance: unset;
+}
+
+.ui-dialog .window_modal_header_actions div[widget="bootstrapformbuilder"] > .panel-heading {
+    display: block !important;
+    background-color: transparent !important;
+    border: 0px;
+    padding-bottom: 0px;
+    padding-top: 10px;
+    padding-right: 10px;
+    margin-bottom: -12px;
+}
+
+.ui-dialog .window_modal_header_actions div[widget="bootstrapformbuilder"] > .panel-heading .panel-title{
+    display: none;
+}
+
+.tab-pane{
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    padding-top: 15px !important;
+}
+
+.tseparator{
+    margin-top: 10px;
+}
+
+hr.tseparator-divisor{
+    margin-bottom: 20px;
+}
+
+.datagrid-header-actions{
+  padding-top:10px;
+  padding-bottom:10px;
+  background-color:#fff; 
+  justify-content: space-between; 
+  border-bottom: 0px;
+  display:flex;
+}
+
+  .panel-purple>.panel-heading{
+    background-color: #464480 !important;
+    color: #fff !important; 
+}
+
+.panel-purple-light>.panel-heading{
+    background-color:  #605ca8 !important; 
+    color: #fff !important;
+}
+
+.panel-blue>.panel-heading{
+    background-color: #29688c !important; 
+    color: #fff !important;
+}
+
+.panel-blue-light>.panel-heading{
+    background-color: #3c8dbc !important; 
+    color: #fff !important;
+}
+
+.panel-yellow>.panel-heading{
+    background-color: #db8b0b !important; 
+    color: #fff !important;
+}
+
+.panel-yellow-light>.panel-heading{
+    background-color: #f39c12 !important; 
+    color: #fff !important;
+}
+
+.panel-red>.panel-heading{
+    background-color: #d73925 !important; 
+    color: #fff !important;
+}
+
+.panel-red-light>.panel-heading{
+    background-color: #dd4b39 !important; 
+    color: #fff !important;
+}
+
+.panel-green>.panel-heading{
+    background-color: #00a65a !important; 
+    color: #fff !important;
+}
+
+.panel-green-light>.panel-heading{
+    background-color: #42c78a !important;
+    color: #fff !important;
+}
+
+.panel-black>.panel-heading{
+    background-color: #25292b !important; 
+    color: #fff !important;
+}
+
+.panel-black-light>.panel-heading{
+    background-color: #303334 !important; 
+    color: #fff !important;
+}
+.panel-bg-black>.panel-heading{
+    background-color:#000000 !important;
+    color:white !important;
+}
+.panel-bg-blue>.panel-heading{
+    background-color: #2196F3 !important;
+    color:white !important;
+}
+.panel-bg-cyan>.panel-heading{
+    background-color: #00BCD4 !important;
+    color:white !important;
+}
+.panel-bg-deep-purple>.panel-heading{
+    background-color: #673AB7 !important;
+    color:white !important;
+}
+.panel-bg-grey>.panel-heading{
+    background-color: #9E9E9E !important;
+    color:white !important;
+}
+.panel-bg-light-blue>.panel-heading{
+    background-color: #03A9F4 !important;
+    color:white !important;
+}
+.panel-bg-light-green>.panel-heading{
+    background-color: #8BC34A !important;
+    color:white !important;
+}
+.panel-bg-orange>.panel-heading{
+    background-color: #FF9800 !important;
+    color:white !important;
+}
+.panel-bg-purple>.panel-heading{
+    background-color: #9C27B0 !important;
+    color:white !important;
+}
+.panel-bg-teal>.panel-heading{
+    background-color: #009688 !important;
+    color:white !important;
+}
+.panel-bg-amber>.panel-heading{
+    background-color: #FFC107 !important;
+    color:white !important;
+}
+.panel-bg-blue-grey>.panel-heading{
+    background-color: #607D8B !important;
+    color:white !important;
+}
+.panel-bg-brown>.panel-heading{
+    background-color: #795548 !important;
+    color:white !important;
+}
+.panel-bg-deep-orange>.panel-heading{
+    background-color: #FF5722 !important;
+    color:white !important;
+}
+.panel-bg-green>.panel-heading{
+    background-color: #4CAF50 !important;
+    color:white !important;
+}
+.panel-bg-indigo>.panel-heading{
+    background-color: #3F51B5 !important;
+    color:white !important;
+}
+.panel-bg-lime>.panel-heading{
+    background-color: #CDDC39 !important;
+    color:white !important;
+}
+.panel-bg-pink>.panel-heading{
+    background-color: #E91E63 !important;
+    color:white !important;
+}
+.panel-bg-red>.panel-heading{
+    background-color: #F44336 !important;
+    color:white !important;
+}
+.panel-bg-yellow>.panel-heading{
+    background-color: #ffe821 !important;
+    color:white !important;
+}
+.panel-white>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+.panel-primary>.panel-heading {
+    color: #fff;
+    background-color: #428bca;
+    border-color: #357ebd;
+}
+.panel-danger>.panel-heading {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+.panel-success>.panel-heading {
+    color: #fff;
+background-color: #5cb85c;
+border-color: #4cae4c;
+}
+.panel-info>.panel-heading {
+    color: #fff;
+background-color: #f0ad4e;
+border-color: #eea236;
+}
+.panel-warning>.panel-heading {
+    color: #fff;
+background-color: #ec971f;
+border-color: #d58512;
+}
+
+#adianti_div_content {
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.form-horizontal{
+    margin-bottom:0px;
+}
+
+#form_search_SystemUser .card-body.panel-body{
+    padding-bottom:0px;
+}
+
+.btn-black {
+    background-color: #111;
+    border-color: #333;
+    color: #ffffff;
+}
+
+.bg-deep-purple {
+    background-color: #673AB7 !important;
+    color: #fff;
+}
+
+.bg-deep-orange {
+    background-color: #FF5722 !important;
+    color: #fff;
+}
+.bg-brown {
+    background-color: #795548 !important;
+    color: #fff;
+}
+
+.bg-blue-grey {
+    background-color: #607D8B !important;
+    color: #fff;
+}
+.bg-grey {
+    background-color: #9E9E9E !important;
+    color: #fff;
+}
+.bg-amber {
+    background-color: #FFC107 !important;
+    color: #fff;
+}
+.bg-light-green {
+    background-color: #8BC34A !important;
+    color: #fff;
+}
+.bg-light-blue {
+    background-color: #03A9F4 !important;
+    color: #fff;
+}
+
+.table tbody tr.selected td {
+    background-color: #6c757d !important;
+    color: white !important;
+}
+
+
+
+
+

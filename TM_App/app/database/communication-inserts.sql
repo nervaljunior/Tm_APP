@@ -1,0 +1,1 @@
+INSERT INTO system_document_category VALUES(1,'Documentação');

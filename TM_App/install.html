@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adianti Builder - Database Install</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {HEAD}
+
+  </head>
+  <body class="hold-transition skin-black-light sidebar-mini">
+    <div class="wrapper">
+
+      
+      <!-- Left side column. contains the logo and sidebar -->
+     
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper" style="margin-left: 0px;">
+        <!-- Main content -->
+        <section class="content" style="margin-left: 0px;">
+            <div id='adianti_div_content'>
+                {$content}
+            </div>
+        </section><!-- /.content -->
+        
+        <div id="adianti_online_content"></div>
+        <div id="adianti_online_content2"></div>
+      </div><!-- /.content-wrapper -->
+        
+
+      <!-- Add the sidebar's background. This div must be placed
+           immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+    </div><!-- ./wrapper -->
+    
+    <script>
+      BuilderTemplate.init({
+        top_menu: false,
+        top_menu_only: false,
+        language: '{lang}',
+        debug: '{debug}',
+        application_name: 'Install',
+        use_mdi_windows : false,
+        store_tabs : false,
+        use_tabs : false,
+        verify_messages_menu : false,
+        verify_notifications_menu : false,
+        public_layout: true
+      });
+    </script>
+
+  </body>
+</html>

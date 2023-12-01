@@ -1,0 +1,60 @@
+<!--[main]-->
+<!--[data]-->
+<style>#{$name}-container.c3 svg {width: {$width};height: {$height};}</style>
+<div id="{$name}" class="{$class}" style="width: {$width};" >
+    <!--[panel]-->
+    <div class="panel panel-default" >
+        <!--[header]-->
+        <div class="panel-heading">
+            <div class="panel-title" id="title">{$title}</div>
+        </div>
+        <!--[/header]-->
+        <div class="panel-body no-padding">
+            <div id="{$name}-container"  style="width: {$width};height: {$height};" ></div>
+        </div>
+    </div>
+    <!--[/panel]-->
+    <!--[nopanel]-->
+        <div id="{$name}-container"  style="width: {$width};height: {$height};" ></div>
+    <!--[/nopanel]-->
+</div>
+<script>
+    (() => {
+        if($('a[data-toggle="tab"]').length > 0 && $('a[data-toggle="tab"]:not([dispatch-resize="true"])'))
+        {
+            $('a[data-toggle="tab"]').attr('dispatch-resize', 'true');
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                setTimeout(() => {
+                    window.dispatchEvent(new Event('resize'));
+                }, 100);
+            });
+        }
+
+        const colors = {$colors|raw};
+        const tooltipFormats = {$tooltipFormats|raw};
+        const changeColor = (inColor, data) => colors[data.index];
+        const defaultFormatFunction = (v, y, c) => { if(v == null) { return null; } return '{$prefix}'+number_format(v, '{$precision}', '{$decimalSeparator}', '{$thousandSeparator}')+'{$sufix}'};
+
+        if (! c3) { __adianti_error("Error", "C3 not found"); }
+
+        c3.generate(
+            {$options|raw}
+        );
+        $('.c3-shape.c3-circle').each(function(index, element){
+            $(element).css('fill', $(element).css('color') );
+        });
+    })();
+</script>
+<!--[/data]-->
+<!--[no-data]-->
+<div id="{$name}" class={$class} style="width: {$width};height: {$height};">
+    <div class="panel panel-default" >
+        <div class="panel-body no-padding" style="margin: auto;padding: 25px !important;text-align: center;">
+            <div><b>{$title}</b></div>
+            {$label}
+        </div>
+    </div>
+    
+</div>
+<!--[/no-data]-->
+<!--[/main]-->
