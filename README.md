@@ -58,6 +58,12 @@ Este projeto consiste em uma plataforma para o gerenciamento de projetos de pesq
 
 ## 📌 Versão
 
+![Imagem do WhatsApp de 2023-12-01 à(s) 17 21 39_e4d96b17](https://github.com/nervaljunior/Tm_APP/assets/108685222/45a139b0-2028-4d51-b065-f204d8c4f0a5)
+
+![Imagem do WhatsApp de 2023-12-01 à(s) 17 21 39_59b7eb53](https://github.com/nervaljunior/Tm_APP/assets/108685222/9a0598f8-f0c8-414e-8910-9b776ee54782)
+
+![Imagem do WhatsApp de 2023-12-01 à(s) 17 21 39_c9d6a648](https://github.com/nervaljunior/Tm_APP/assets/108685222/863c2319-ee98-4ad1-9ec4-c0699201eaa3)
+
 
 
 ## Estrutura do Projeto
