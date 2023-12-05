@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> {template_title} </title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="manifest.json?appver=730">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="shortcut icon" href="{favicon}">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+   
+    <link href='app/templates/{template}/css/layout-mobile.css?appver=1' rel='stylesheet' type='text/css' media='screen'> 
+   
+  </head>
+  <body class="login-page builder-template-login layout-mobile">
+
+        <div id="wrapper"  style="width: 100%">
+            <div id="adianti_div_content"></div>
+            <div id="adianti_online_content"></div>
+            <div id="adianti_online_content2"></div>
+
+            <div id="adianti_right_panel" class="right-panel"></div>
+        </div>
+    </body>
+
+    <script>
+
+        BuilderTemplate.init({
+          top_menu: {top_menu_var},
+          top_menu_only: {top_menu_only},
+          language: '{lang}',
+          debug: '{debug}',
+          verify_messages_menu : false,
+          verify_notifications_menu : false,
+          public_layout: true,
+          dialog_box_type: '{dialog_box_type}'
+        });
+  
+      </script>
+</html>

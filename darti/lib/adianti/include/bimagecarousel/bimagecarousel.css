@@ -1,0 +1,17 @@
+.bimagecarousel .splide__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bimagecarousel .splide__slide {
+    opacity: 0.6;
+}
+
+.bimagecarousel .splide__slide.is-active {
+    opacity: 1;
+}
+
+.bimagecarousel.thumb .splide__list {
+    justify-content: center;
+}

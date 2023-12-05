@@ -1,0 +1,53 @@
+<!--[main]-->
+
+<div id='chart-box' style="margin: auto; float: none; width: {$width}{$widthType}">
+    <div class="panel panel-default" >
+        <div class="panel-heading">
+            <div class="panel-title" id='title'>{$title}</div>
+        </div>
+        <div class="panel-body no-padding">
+            <div id='chart-container' height='{$height}px'>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<script>
+    
+    var showPercentage = {$showPercentage};
+    var formatLabel = {
+        format: function (v, id, i, j) { 
+            return '{$prefix}'+number_format(v, '{$precision}', '{$decimalSeparator}', '{$thousandSeparator}')+'{$sufix}';
+        }
+    }
+    
+    if(showPercentage == true)
+    {
+       formatLabel = {};
+    }
+    
+    c3.generate({
+        bindto: '#chart-container',
+        size: {
+          height: {$height}
+        },
+        data: {
+            columns: {$data|raw},
+            type: 'pie'
+        },
+        pie: {
+            label: formatLabel
+        },
+        tooltip: {
+            format:{
+                value : function (v, ratio, id) { 
+                    return '{$prefix}'+number_format(v, '{$precision}', '{$decimalSeparator}', '{$thousandSeparator}')+'{$sufix}';
+                }
+            }
+        }
+    });
+</script>
+    
+<!--[/main]-->

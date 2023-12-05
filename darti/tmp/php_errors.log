@@ -1,0 +1,2 @@
+[05-Dec-2023 09:44:00 America/Sao_Paulo] PHP Warning:  Undefined array key "builder" in C:\xampp\htdocs\darti\app\service\builder\database\BuilderDatabaseService.php on line 223
+[05-Dec-2023 09:44:00 America/Sao_Paulo] PHP Warning:  Trying to access array offset on value of type null in C:\xampp\htdocs\darti\app\service\builder\database\BuilderDatabaseService.php on line 223

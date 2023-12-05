@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html translate="no">
+  <head>
+    <title>{template_title}</title>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+
+    <link href='app/templates/{template}/css/layout-mobile.css?appver=1' rel='stylesheet' type='text/css' media='screen'> 
+    <link href='app/templates/{template}/themes/default-mobile.css?appver=1' rel='stylesheet' type='text/css' media='screen'> 
+</head>
+<body class="builder-template-login layout-mobile">
+
+    <div class='container-login'>
+        <div class="panel-login">
+            <div class='login-content'>
+                <div id="adianti_div_content"></div>
+                <div id="adianti_online_content"></div>
+                <div id="adianti_online_content2"></div>
+                <div id="adianti_right_panel" class="right-panel"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        BuilderTemplate.init({
+            top_menu: {top_menu_var},
+            top_menu_only: {top_menu_only},
+            language: '{lang}',
+            debug: '{debug}',
+            application_name: '{application}',
+            use_mdi_windows : {use_mdi_windows},
+            store_tabs : {store_tabs},
+            use_tabs : {use_tabs},
+            verify_messages_menu : {verify_messages_menu},
+            verify_notifications_menu : {verify_notifications_menu},
+            public_layout: false,
+            dialog_box_type: '{dialog_box_type}'
+      });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="manifest" href="manifest.json?appver=730">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="apple-touch-icon" sizes="180x180" href="app/images/icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <link rel="shortcut icon" href="{favicon}">
+    
+    {LIBRARIES}
+    {LIBRARIES_THEME}
+    {LIBRARIES_BUILDER}
+    {LIBRARIES_USER}
+    {HEAD}
+    
+    <link href='app/templates/{template}/css/layout-mobile.css?appver=1' rel='stylesheet' type='text/css' media='screen'> 
+
+  </head>
+  
+  <body class="builder-template-layout hold-transition  sidebar-mini {builder_top_menu} fixed layout-mobile" id="builder-layout">
+    <div class="wrapper">
+
+      <header class="main-header">
+        <nav class="navbar navbar-static-top" role="navigation">
+            <span class="nav navbar-nav"><li><a href="#" class="builder-mobile-title"></a></li></span>
+            <span class="navbar-custom-menu">
+                <ul class="nav navbar-nav" id='navbar-top-info'style="margin-left: 10px;">
+                    <li class="dropdown messages-menu" id="envelope_messages"></li>
+                    <li class="dropdown notifications-menu" id="envelope_notifications"></li>
+                </ul>
+            </span>
+        </nav>
+      </header>
+
+      <div class="content-wrapper">
+        <section class="content">
+            <div id="adianti_div_content">
+            </div>
+        </section>
+        
+        <div id="adianti_online_content"></div>
+        <div id="adianti_online_content2"></div>
+        
+        <div id="adianti_right_panel" class="right-panel"></div>
+      </div>
+      <footer class="main-footer">
+        <strong>{userunitid} - {userunitname}</strong>
+      </footer>
+      
+      <div class="control-sidebar-bg"></div>
+    </div>
+
+    <script>
+      BuilderTemplate.init({
+        top_menu: {top_menu_var},
+        top_menu_only: {top_menu_only},
+        language: '{lang}',
+        debug: '{debug}',
+        verify_messages_menu : {verify_messages_menu},
+        verify_notifications_menu : {verify_notifications_menu},
+        public_layout: false,
+          dialog_box_type: '{dialog_box_type}'
+      });
+    </script>
+  </body>
+</html>

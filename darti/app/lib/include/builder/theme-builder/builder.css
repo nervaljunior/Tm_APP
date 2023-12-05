@@ -1,0 +1,310 @@
+#database-merge .container-table-diff {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 5px 10px 20px 0px;
+    border: 2px solid;
+    border-radius: 5px;
+    margin: 15px;
+}
+
+#database-merge .container-table-diff.new .table-column-diff-name + table,
+#database-merge .container-table-diff.drop .table-column-diff-name + table,
+#database-merge .container-table-diff.equal .table-column-diff-name  + table {
+    display: none;
+}
+
+#database-merge .container-table-diff.new {
+    border-color: #4CAF50;
+}
+
+#database-merge .container-table-diff.equal {
+    border-color: #2196F3;
+}
+
+#database-merge .container-table-diff.name_equal {
+    border-color: #795548;
+}
+
+#database-merge .container-table-diff.rename {
+    border-color: #FF9800;
+}
+
+#database-merge .container-table-diff.drop {
+    border-color: #F44336;
+}
+
+#database-merge .table-column-diff-name:hover {
+    background: whitesmoke;
+}
+
+#database-merge .table-column-diff-name [role=group] {
+    float: left;
+}
+
+#database-merge .table-column-diff-name {
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+    padding: 25px 10px 10px 10px;
+}
+
+#database-merge .table-column-diff-name small {
+    position: absolute;
+    top: 9px;
+    color: #546475;
+    font-size: 11px;
+}
+
+#database-merge .container-table-diff.new .table-column-diff-name i,
+#database-merge .container-table-diff.drop .table-column-diff-name i,
+#database-merge .container-table-diff.equal .table-column-diff-name i {
+    transform: rotate(-90deg);
+}
+
+#database-merge .table-column-diff-name i {
+    position: absolute;
+    transition : 1s;
+    right: 30px;
+    top: 20px;
+}
+#database-merge #table-diffs {
+    border-collapse: collapse;
+}
+
+#database-merge #table-diffs > tbody> tr > td > div .label span.badge {
+    font-size: 90%;
+    color: white;
+}
+
+#database-merge #table-diffs > tbody> tr > td > div .label {
+    padding: 5px;
+    width: 100%;
+    font-weight: normal;
+    text-align: left;
+    color: #333;
+    font-size: 12px;
+}
+
+#database-merge #table-diffs.table thead tr th label {
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#database-merge #table-diffs.table thead tr th {
+    vertical-align: middle;
+    text-align: center;
+}
+
+#database-merge #table-diffs.table tbody tr td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 5px;
+}
+
+#database-merge #table-diffs.table tbody tr td .select2 {
+    border: 1px solid #f2f2f2;
+}
+
+#database-merge .commands div {
+    text-align: left;
+    line-height: 1.8;
+    color: #333;
+}
+
+#database-merge select:disabled {
+    opacity: 0.5;
+}
+
+#database-merge table#table-diffs {
+    margin-bottom: unset !important;
+}
+
+#database-merge table#table-diffs .header-row {
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+}
+
+#database-merge table#table-diffs tr.warning {
+    background: orange;
+    color: white;
+    letter-spacing: 0.5px;
+    font-size: 85%;
+    display: none;
+}
+
+#database-merge table#table-diffs tr.warning i {
+    margin-right: 5px;
+}
+
+#database-merge form[name=ConfirmCommandsDiffForm] #results {
+    padding: 10px;
+    max-height: 200px;
+    overflow: auto;
+    font-size: 11px;
+    border: 1px solid #d2d6de;
+}
+
+#database-merge form[name=ConfirmCommandsDiffForm] #results label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#database-merge form[name=ConfirmCommandsDiffForm] #results div {
+    padding: 3px 0px;
+}
+
+#database-merge form[name=ConfirmCommandsDiffForm] #results div span {
+    margin-right: 5px;
+}
+
+#database-merge form[name=ConfirmCommandsDiffForm] #results div span i {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#database-merge form[name=ConfirmCommandsDiffForm] #results div.success span i {
+    color: green;
+}
+
+#database-merge form[name=ConfirmCommandsDiffForm] #results div.error span i {
+    color: red;
+}
+
+#database-merge table#table-diffs [data-action=check-news].active {
+    background: #00a65a;
+    border-color: #28a745;
+    color: white;
+}
+
+#database-merge table#table-diffs [data-action=check-renames].active {
+    background: #ff851b;
+    border-color: #ff851b;
+    color: white;
+}
+
+#database-merge .bg-brown {
+    background-color: #795548 !important;
+    color: #fff; 
+}
+#database-merge .bg-brown .content .text, #database-merge .bg-brown .content .number {
+    color: #fff !important; 
+}
+
+
+.builder-menu {
+    flex: 1;
+}
+body.top-menu-only .navbar-static-top > .navbar-custom-menu{
+    /* width:100%; */
+    padding-left: 10px;
+}
+
+.builder-menu.collapse:not(.show) {
+    display: block;
+    width: 100%;
+  }
+
+  .dropdown.builder-top-menu {
+    display: none;
+  }
+
+  div.builder-menu.show-arrows>ul {
+      margin: 0px 28px;
+  }
+
+  div.builder-menu.navbar-custom-menu .dropdown-submenu>.dropdown-menu {
+    position: absolute;
+  }
+
+  div.builder-menu.navbar-custom-menu>.navbar-nav>li {
+    position: relative;
+    flex: none;
+  }
+
+  div.builder-menu.navbar-custom-menu .navbar-nav>li:not(.dropdown)>a {
+    display: block;
+    padding: 15px;
+    cursor: pointer;
+  }
+
+  div.builder-menu.navbar-custom-menu>.navbar-nav>li>.dropdown-menu {
+    border-top-right-radius: 0px;
+    left: 0px;
+    top: 50px;
+    border-top-left-radius: 0px;
+    border-top: unset;
+  }
+  
+  div.builder-menu ::-webkit-scrollbar { 
+      width: 0px;
+      height: 0px;
+  }
+  
+  div.builder-menu .arrow-menus-scroll {
+      display: none;
+      padding: 15px 5px;
+  }
+  
+  div.builder-menu .arrow-menus-scroll a i {
+      color: var(--button-text-color);
+  }
+  
+  div.builder-menu.show-arrows .arrow-menus-scroll {
+      display: flex;
+      align-items: center;
+  }
+
+.table-fixed-header { 
+    overflow-y: auto; 
+    height: 200px; 
+}
+
+.table-fixed-header thead th { 
+    position: sticky; 
+    top: 0; 
+    background-color: #fff; 
+    z-index:1;
+}
+
+.table-fixed-header thead {
+    background-color: #fff;
+}
+
+.table-fixed-header thead tr {
+    background-color: #fff;
+}
+
+.table-fixed-header-with-search tbody tr:first-child td{
+    position: sticky; 
+    top: 39px; 
+    background-color: #f4f4f4; 
+    z-index:1;
+}
+
+.builder-detail-form .tab-pane:first-child{
+    padding: 0px !important;
+    margin-top: 0px !important;
+}
+
+.builder-detail-form .panel-body:first-child{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+}
+
+.form-group.tformrow.row{
+    align-items: normal !important;
+}
+
+[widget=ttext].tfield_disabled {
+    pointer-events: visible;
+}
+
+#top-menu > li:not(.dropdown) > a {
+    cursor: pointer;
+}

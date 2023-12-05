@@ -1,0 +1,6 @@
+lib/independent/css/cropper.min.css
+lib/independent/css/font-awesome.min.css
+lib/independent/css/fullcalendar.min.css
+lib/independent/css/iziToast.min.css
+lib/independent/css/pickr.min.css
+lib/independent/css/splide.min.css

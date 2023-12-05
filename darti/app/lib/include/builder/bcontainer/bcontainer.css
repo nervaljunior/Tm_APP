@@ -1,0 +1,71 @@
+.bContainer-fieldset{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.bContainer-accordion.bContainer-accordion-hide{
+    margin-bottom: 15px;
+}
+
+.bContainer-fieldset .bContainer-title{
+    position: absolute;
+    margin-left: 15px;
+    width: fit-content;
+    margin-top: -15px;
+    padding: 0px 5px 0px 5px;
+}
+
+.bContainer-fieldset .panel-body{
+    padding: 15px 5px 0px 5px !important;
+}
+
+.card-body [widget="bootstrapformbuilder"]:not(.bContainer-fieldset) .card-body{
+    padding: 0px;
+}
+
+.card [widget="bootstrapformbuilder"]:not(.bContainer-fieldset) .card{
+    padding: 0px;
+    box-shadow: none;
+    margin: 0px;
+    border: none;
+}
+
+.card-body [widget="bootstrapformbuilder"]:not(.bContainer-fieldset) .card-body .tab-pane{
+    padding:10px;
+    border-color: #c0c0c0;
+}
+
+.bContainer-fieldset.bContainer-accordion .card-body{
+    padding-top: 15px;
+}
+
+.bContainer-fieldset.bContainer-accordion-hide  .card-body{
+    display:none;
+}
+
+.bContainer-fieldset.bContainer-accordion-show .card-body{
+    display:block;
+}
+
+.bContainer-fieldset .bContainer-title{
+    background-color: #fff; 
+    color: #333; 
+    border: 1px solid #c0c0c0; 
+    font-weight: normal; 
+    font-style: normal; 
+    font-size:18px; 
+    text-decoration:initial
+}
+
+.bContainer-fieldset.bContainer-accordion .bContainer-title{
+    width: calc(100% - 30px);
+    margin-left: -1px;
+    cursor: pointer;
+}
+
+.bContainer-fieldset.bContainer-accordion .bContainer-title .bContainer-accordion-icon{
+    float: right;
+    font-size: 14px;
+    margin-top: 7px;
+}

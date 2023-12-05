@@ -1,0 +1,81 @@
+html {
+    overflow: auto !important;
+}
+
+:root
+{
+    --header-height: 50px !important;
+}
+
+.toggle-menu,
+.toggle-top-menu {
+    display: none;
+}
+
+body {
+    overflow: unset !important;
+    background-color: var(--live-background-color);
+    height: unset !important;
+    position: unset !important;
+}
+
+.container-header {
+    position: sticky !important;
+    top: 0 !important;
+}
+
+.container-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.container-header>.header-track {
+    display: block !important;
+    position: unset;
+    width: fit-content;
+    max-height: var(--header-height) !important;
+    height: var(--header-height) !important;
+    box-shadow: none;
+}
+
+.builder-dropdown-menu {
+    background-color: var(--header-background-color);
+    border-bottom: 1px solid var(--header-border-bottom);
+}
+
+.simulate-logo {
+    width: 100%;
+    margin-left: 50px;
+}
+
+.logo-name {
+    width: 100%;
+    text-align: left;
+}
+
+.container-header > .header-trackn-menu .builder-dropdow {
+    padding: 5px !important;
+}
+
+.container-live {
+    width: 100vw;
+    overflow: inherit;
+}
+
+.header-logo {
+    min-width: unset;
+}
+
+@media  (max-width: 576px) {
+    .layout-mobile  #adianti_right_panel.right-panel {
+        width: calc( 100% - 50px) !important;
+    }
+}
+
+
+
+
+
+
+

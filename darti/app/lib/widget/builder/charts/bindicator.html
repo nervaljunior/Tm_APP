@@ -1,0 +1,55 @@
+<!--[main]-->
+<!--[horizontal]-->
+<div class="info-box" style="background-color: {$contentColor};height: {$height};width: {$width};">
+    <!--[horizontal-icon]-->
+    <span class="info-box-icon" style="background-color: {$backgroundIconColor};height: {$height};line-height: {$height};">
+      {$icon}
+    </span>
+    <!--[/horizontal-icon]-->
+    <div class="info-box-content" style="flex: 1;padding: 5px 10px;height: {$height};margin-left: {$marginContent}; text-align: {$alignLayout};" >
+      <span class="info-box-text" style="{$style}" title="{$title}" >{$title}</span>
+      <span class="info-box-number" style="font-weight: normal;word-wrap: initial;text-overflow: ellipsis; width: 100%;white-space: nowrap; overflow: hidden;{$styleValue}" >{$data}</span>
+      <!--[horizontal-progress]-->
+      <div class="progress">
+        <div class="progress-bar" style="width: {$value}%;background-color: {$targetColor};"></div>
+      </div>
+      <span class="progress-description" style="line-height: 1;{$styles}">
+        {$description}
+      </span>
+      <!--[/horizontal-progress]-->
+      <!--[horizontal-description]-->
+      <span style="line-height: 1;{$styles}">
+        {$description}
+      </span>
+      <!--[/horizontal-description]-->
+    </div>
+</div>
+<!--[/horizontal]-->
+
+<!--[vertical]-->
+<div class="info-box" style="background-color: {$contentColor};height: {$height};width: {$width};text-align: {$alignLayout};">
+  <div class="info-box-content" style="flex: 1;padding: 10px;height: {$height};margin-left: 0;display: flex;flex-direction: column;justify-content: space-around;" >
+    <span class="info-box-text" style="{$style}" title="{$title}" >
+      <!--[vertical-icon]-->
+        {$icon}
+      <!--[/vertical-icon]-->
+      {$title}
+      </span>
+    <span class="info-box-number" style="font-weight: normal;word-wrap: initial;text-overflow: ellipsis; width: 100%;white-space: nowrap; overflow: hidden;{$styleValue}" >{$data}</span>
+    <!--[vertical-progress]-->
+    <div class="progress">
+      <div class="progress-bar" style="width: {$value}%;background-color: {$targetColor};"></div>
+    </div>
+    <span class="progress-description" style="line-height: 1;{$styles}">
+      {$description}
+    </span>
+    <!--[/vertical-progress]-->
+    <!--[vertical-description]-->
+    <span style="line-height: 1;{$styles}">
+      {$description}
+    </span>
+    <!--[/vertical-description]-->
+  </div>
+</div>
+<!--[/vertical]-->
+<!--[/main]-->
