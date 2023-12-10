@@ -77,10 +77,55 @@ O projeto segue a arquitetura MVC (Model-View-Controller) para uma organização
 - StarUML
 
 ## Funcionalidades
+# Documentação - Sistema de Gestão de Projetos
+
+Bem-vindo à documentação do Sistema de Gestão de Projetos, construído com o framework Adiante Builder.
+
+## Índice
+
+1. [**Login**](#login)
+2. [**Home**](#home)
+3. [**Gestão**](#gestão)
+    - [Cadastro de Projetos](#cadastro-de-projetos)
+    - [Cadastro de Usuários](#cadastro-de-usuários)
+4. [**Acompanhamento de Tarefas**](#acompanhamento-de-tarefas)
+5. [**Outras Funcionalidades**](#outras-funcionalidades)
+
+## **Login** <a name="login"></a>
+
+Na tela de login, encontram-se os campos "usuário" e "senha", sendo necessário preenchê-los com as informações cadastradas no banco de dados. Em caso de omissão ou inserção de dados incorretos, o sistema emitirá mensagens de erro, tais como "usuário não encontrado", "o campo senha é obrigatório" e "senha incorreta".
+
+## **Home** <a name="home"></a>
+
+Na tela inicial, é possível visualizar os projetos já registrados no sistema. Além disso, encontra-se uma barra de pesquisa central, que permite buscar projetos pelo nome. Na barra superior, é apresentada a informação do usuário atualmente logado no sistema.
+
+## **Gestão** <a name="gestão"></a>
+
+No botão de "Gestão", temos acesso à aba de "Projetos", que exibe a lista completa de todos os projetos registrados no sistema. Através do botão "Cadastrar Projeto", podemos incluir novos projetos, utilizar o botão "Editar" para efetuar modificações, o botão "Apagar" para excluir projetos, e o botão "Participante" para gerenciar os colaboradores envolvidos nos projetos.
+
+### Cadastro de Projetos <a name="cadastro-de-projetos"></a>
+
+Nesta tela, é possível realizar o cadastro inicial dos projetos no sistema, registrando o nome e descrição detalhada do mesmo, informando seu escopo. Existem diversas opções de formatação de texto. Ao acessar a operação de edição, será mostrada esta mesma tela, possibilitando ao usuário editar as informações.
+
+### Cadastro de Usuários <a name="cadastro-de-usuários"></a>
+
+Nesta tela, é possível realizar o cadastro de usuários no sistema, registrando o nome e email. Existem diversas operações disponíveis. No botão "Edição", temos acesso aos campos com os dados cadastrados para o usuário, os quais podem ser alterados. O botão "Excluir" deleta o usuário e todos os seus dados do sistema. O botão "Clonar" permite duplicar os dados de um usuário. O botão "XXXX" permite desativar um usuário, dessa forma, o mesmo não pode ser atribuído a um projeto, porém seus dados serão mantidos. O controle de acesso permite ao admin definir o nível de acesso do usuário. A coluna "Status" mostra se o usuário está ativo ou inativo.
+
+## **Acompanhamento de Tarefas** <a name="acompanhamento-de-tarefas"></a>
+
+Na tela kanban de tarefas, é possível realizar o acompanhamento de tarefas no sistema. As tarefas são classificadas em pendentes, em andamento e concluídas. Na aba tarefas, é possível monitorar o andamento de tarefas pelo gráfico de Gantt e o número de tarefas por status.
+
+## **Outras Funcionalidades** <a name="outras-funcionalidades"></a>
+
+Existem algumas funcionalidades disponíveis no sistema, como "Notificações", que mostram informações sobre os projetos para o usuário. "Mensagens" permite o envio de mensagens entre usuários e admin. No menu do usuário, é possível acessar o próprio perfil e seus dados, recarregar (atualizar) a página e fazer logout do sistema. Os códigos, banco de dados e demais ferramentas utilizadas na construção do sistema podem ser acessados pelo admin para implantação de futuras melhorias.
+
 
 - Desenvolvemos as interações baseadas no modelo CRUD, que são as quatro operações básicas do desenvolvimento de uma aplicação. Essas operações são utilizadas em bases de dados relacionais fornecidas aos usuários do sistema.
 
 Sinta-se à vontade para contribuir com melhorias ou correções neste projeto. Basta criar um fork, fazer as alterações desejadas e enviar um pull request.
+
+
+
 
 ## 📄 Licença
 
