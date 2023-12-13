@@ -29,14 +29,33 @@ No Diagrama de Classes, teremos as classes: Pessoa, Observers, Standard, Admin, 
 ## Diagramação 
 
 #### Caso de Uso
+
+No Diagrama de Caso de Uso, teremos três atores, são eles: Observador-alunos, Standard-aluno-Lider e Admin-Professor. O ator Observador-alunos é uma generalização de Standard-aluno-Líder que, por sua vez, é uma generalização de Admin-Professor. Vale ressaltar, portanto, que os casos de uso de Observador-alunos são comuns para as especializações subsequentes, assim como a funcionalidade de Standard-aluno-Lider é comum pra Admin-Professor. Dessa forma, Observador-alunos tem como funcionalidade Fazer Login e Visualizar Informações no Sistema, que pode ser Consultar Projetos, Visualizar Gráficos e/ou Consultar Tarefas. Standard-aluno-Lider pode, além das anteriores, Atualizar Andamento da Tarefa. Por fim, Admin-Professor é o ator que herda todas as funcionalidades anteriores e ainda tem as seguintes funcionalidades: Criar Usuários, Editar Dados dos Usuários, Criar Tarefas, Atribuir Nível de Prioridade, Editar Tarefas, Alocar Tarefas à Projetos, Criar Projetos, Alocar Usuários a Projetos e Editar Projetos.
+
 ![image](https://github.com/nervaljunior/Tm_APP/assets/108685222/e5595794-6143-4e0a-9d93-1520077fc02d)
 
 #### Sequência
+
+O diagrama mostra o detalhamento do caso de uso "Criar Usuário", no qual o professor (admin) executa metodos que se comunicam com o sistema e com o banco de dados para registro dos dados, verificação da existência ou não, confirmação de criação da conta ou retorno de que o usuario ja esta cadastrado no sistema.
+O diagrama mostra o detalhamento do caso de uso "Criar Projeto", no qual o professor (admin) executa metodos para criação dos projetos no sistema que comunica-se com o banco de dados para salvar os registros. De forma semelhante é possivel consultar as informações posteriormente e criar tarefas dentro do projeto.
+
 ![image](https://github.com/nervaljunior/Tm_APP/assets/108685222/71fb01be-f888-475e-b75f-3e9519760788)
 ![image](https://github.com/nervaljunior/Tm_APP/assets/108685222/0f9872d0-f640-4062-9065-d5ea9fbfa8ec)
 
 #### Atividade
+
+O diagrama mostra o detalhamento do caso de uso "Criar Usuário", no qual o professor (admin) executa metodos que se comunicam com o sistema e com o banco de dados para registro dos dados, verificação da existência ou não, confirmação de criação da conta ou retorno de que o usuario ja esta cadastrado no sistema.
+
+O diagrama mostra o detalhamento do caso de uso "Criar Projeto", no qual o professor (admin) executa metodos para criação dos projetos no sistema que comunica-se com o banco de dados para salvar os registros. De forma semelhante é possivel consultar as informações posteriormente e criar tarefas dentro do projeto.
+
 ![image](https://github.com/nervaljunior/Tm_APP/assets/108685222/d5e54d51-a00e-4fe9-bfdf-6ac87ce23c50)
+
+
+#### Classe 
+
+No Diagrama de Classes, teremos as classes: Pessoa, Observers, Standard, Admin, Projetos e Tarefas. Começando pela classe Admin, que é uma especialização da classe Standard, possui os seguintes métodos: criarProjeto(), editarProjeto(), criarTarefa(), criarProjeto(), editarTarefa(), alocarTarefa(), excluirTarefa(), excluirProjeto(), alocarUsuario(). Standard, por sua vez, é uma especialização de Observers e possui o método atualTarefa(), que atualiza tarefa. Observers é uma especialização de Pessoa e possui como métodos consultarTarefa(), consultarProjetos(), visualizarGrafico(). Pessoa é a classe genérica e possui como atributos id, nome, cpf, numphone e email; seus métodos são: visualizarProjeto(), visualizarTarefa(). A classe Tarefas que possui nomeTarefa, dataInicio e dataFim como atributos, tem o método cadastrarTarefa() e é uma composição de Projetos. Projetos tem os atributos idProjeto, nomeProjeto, nomeResponsavel, dataInicio e dataFim e o método cadastrarProjeto() e é uma composição de Admin.
+
+![Imagem do WhatsApp de 2023-12-13 à(s) 11 42 58_17bc77dd](https://github.com/nervaljunior/Tm_APP/assets/108685222/67c14eca-cd57-42b5-a5a2-d4fc1c9db0ba)
 
 ### 📋 Pré-requisitos
 
@@ -62,8 +81,13 @@ No Diagrama de Classes, teremos as classes: Pessoa, Observers, Standard, Admin, 
 
 ## 📌 Versão
 
+As Imagens a seguir mostram as formas de análise e visualização de gráficos que ajudam no gerenciamento dos projetos.
+
+aqui temos a timeline de tarefas.
 ![Imagem do WhatsApp de 2023-12-01 à(s) 17 21 39_e4d96b17](https://github.com/nervaljunior/Tm_APP/assets/108685222/45a139b0-2028-4d51-b065-f204d8c4f0a5)
 ![Imagem do WhatsApp de 2023-12-01 à(s) 17 21 39_59b7eb53](https://github.com/nervaljunior/Tm_APP/assets/108685222/9a0598f8-f0c8-414e-8910-9b776ee54782)
+
+aqui por ultimo podemos analisar os usuarios que estão cadastrados e qual o tipo de acesso e preferencias que eles têm.
 ![Imagem do WhatsApp de 2023-12-01 à(s) 17 21 39_c9d6a648](https://github.com/nervaljunior/Tm_APP/assets/108685222/863c2319-ee98-4ad1-9ec4-c0699201eaa3)
 
 ## Estrutura do Projeto
